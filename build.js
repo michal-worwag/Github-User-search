@@ -70,8 +70,7 @@ var App = function (_React$Component) {
               return _this3.onChangeHandle(event);
             },
             value: this.state.searchText })
-        ),
-        React.createElement(UsersList, { users: this.state.users })
+        )
       );
     }
   }]);
@@ -91,7 +90,11 @@ var UsersList = function (_React$Component2) {
   _createClass(UsersList, [{
     key: 'render',
     value: function render() {
-      return React.createElement('div', null);
+      return React.createElement(
+        'div',
+        null,
+        this.users
+      );
     }
   }, {
     key: 'users',
