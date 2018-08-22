@@ -36,7 +36,7 @@ class App extends React.Component {
             onChange={event => this.onChangeHandle(event)}
             value={this.state.searchText}/>
         </form>
-
+        <UsersList users={this.state.users}/>
       </div>
     );
   }

@@ -70,7 +70,8 @@ var App = function (_React$Component) {
               return _this3.onChangeHandle(event);
             },
             value: this.state.searchText })
-        )
+        ),
+        React.createElement(UsersList, { users: this.state.users })
       );
     }
   }]);
