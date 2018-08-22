@@ -13,7 +13,7 @@ class App extends React.Component {
     }
 
     onChangeHandle(event){
-        thisSetState({searchText: event.target.value});
+        this.SetState({searchText: event.target.value});
     }
 
     onSubmit(event){
@@ -22,9 +22,9 @@ class App extends React.Component {
         const url = `https://api.github.com/search/users?q=${searchText}`;
         fetch(url)
             .then(response => response.json())
-            .then(responseJson => this.setState({users: responseJson.itmes}));
+            .then(responseJson => this.setState({users: responseJson.items}));
     }
-
+    
     render(){
         return (
             <div>

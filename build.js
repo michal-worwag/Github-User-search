@@ -28,7 +28,7 @@ var App = function (_React$Component) {
     _createClass(App, [{
         key: 'onChangeHandle',
         value: function onChangeHandle(event) {
-            thisSetState({ searchText: event.target.value });
+            this.SetState({ searchText: event.target.value });
         }
     }, {
         key: 'onSubmit',
@@ -42,7 +42,7 @@ var App = function (_React$Component) {
             fetch(url).then(function (response) {
                 return response.json();
             }).then(function (responseJson) {
-                return _this2.setState({ users: responseJson.itmes });
+                return _this2.setState({ users: responseJson.items });
             });
         }
     }, {
