@@ -1,5 +1,3 @@
-Zadanie-15.9
+Github-User-search
 
-Wyszukiwarka użykowników
-
-https://michal-worwag.github.io/Zadanie-15.9-UserSearch/
+https://michal-worwag.github.io/Github-User-search/
